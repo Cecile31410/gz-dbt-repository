@@ -12,6 +12,7 @@ renamed as (
         date_date,
         orders_id,
         pdt_id AS products_id,
+        orders_id || "-" || pdt_id AS orders_products_id,
         revenue,
         quantity
 
