@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: stg_raw__sales
+    columns:
+      - name: orders_products_id
+        tests:
+          - unique
