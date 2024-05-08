@@ -1,10 +1,10 @@
-name: 'dbt_exo'
+name: 'student'
 version: 1.0.0
 config-version: 2
 profile: 'default'
 
 models:
-  dbt_exo:
+  student:
     staging:
       +materialized: view
     intermediate:
