@@ -69,6 +69,71 @@ sources:
             tests:
               - not_null
 
+      - name: adwords
+        identifier: raw_gz_adwords
+        description: campagne greeweez adwords
+        columns:
+          - name: date_date
+            description: date campagne
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+            description: coûts des campagnes
+          - name: impression
+            description: nb impressions générées
+          - name: click
+            description: nb clicks générés
+
+      - name: bing
+        identifier: raw_gz_bing
+        description: campagne greenweez bing
+        columns:
+          - name: date_date
+            description: date campagne
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+            description: coûts des campagnes
+          - name: impression
+            description: nb impressions générées
+          - name: click
+            description: nb clicks générés
+
+      - name: criteo
+        identifier: raw_gz_criteo
+        description: campagne greenweez criteo
+        columns:
+          - name: date_date
+            description: date campagne
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+            description: coûts des campagnes
+          - name: impression
+            description: nb impressions générées
+          - name: click
+            description: nb clicks générés
+
+      - name: facebook
+        identifier: raw_gz_facebook
+        description: campagne greenweez facebook
+        columns:
+          - name: date_date
+            description: date campagne
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+            description: coûts des campagnes
+          - name: impression
+            description: nb impressions générées
+          - name: click
+            description: nb clicks générés
+
+
 models:
   - name: stg_raw__sales
     columns:
@@ -92,3 +157,6 @@ models:
         decsription: marge totale par jour
       - name: operational_margin
         description: marge opérationnelle totale par jour
+
+
+  
