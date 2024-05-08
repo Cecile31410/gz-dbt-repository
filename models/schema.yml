@@ -68,3 +68,27 @@ sources:
             description: shipping cost for each order
             tests:
               - not_null
+
+models:
+  - name: stg_raw__sales
+    columns:
+      - name: orders_products_id
+        description: test PK pour stg_raw__sales / CONCAT orders_id et products_id
+        tests:
+          - unique
+
+models:
+  - name: finance_days
+    columns:
+      - name: date_date
+        description: date des commandes
+      - name: nb_transactions
+        description: nombre total de commandes par jour
+      - name: revenue
+        description: revenu total par jour
+      - name: average_basket
+        description: montant moyen du panier par jour
+      - name: margin
+        decsription: marge totale par jour
+      - name: operational_margin
+        description: marge opérationnelle totale par jour
